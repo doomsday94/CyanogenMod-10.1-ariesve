@@ -1,0 +1,26 @@
+#!/system/bin/sh
+# get_macaddrs (Cyanogen 7)
+# by subpsyke
+#
+# This script will read the MAC addresses from Samsung's RIL.
+
+unset BTMAC
+
+# Skip processing if MAC addresses are already written
+if [ -f /data/.bt.info ]; then
+	echo "MAC addresses already found."
+fi
+
+until [ $(expr length "$BTMAC") == 12 ]; do
+	BTMAC=`getprop ril.bt_macaddr`
+	sleep 1
+done
+
+# Convert BT MAC address to proper format
+echo $BTMAC | sed 's!^M$!!;s!\-!!g;s!\.!!g;s!\(..\)!\1:!g;s!:$!!' >/data/.bt.info
+setprop ro.bt.bdaddr_path "/data/.bt.info"
+
+chmod 666 /data/.bt.info
+chmod 666 /data/.mac.info
+
+exit
