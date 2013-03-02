@@ -2,18 +2,24 @@
 <resources>
     <string name="app_name">Galaxy S Plus 設定</string>
 
-    <string name="category_screen_title">螢幕</string>
-    <string name="color_tuning_title_head">色彩調整</string>
-    <string name="color_tuning_summary_head">校正螢幕色彩</string>
-    <string name="color_red_title">紅</string>
-    <string name="color_green_title">綠</string>
-    <string name="color_blue_title">藍</string>
-
+	<string name="category_screen_title">螢幕</string>
     <string name="category_touchkey_title">觸控鍵</string>
     <string name="backlight_timeout_title_head">背光逾時</string>
     <string name="backlight_timeout_summary_head">調整觸控鍵背光自動關閉前的延遲時間</string>
+	
+	<string name="backlight_wakelock_title_head">Backlight Activation</string>
+    <string name="backlight_wakelock_summary_head">Activate the backlight during deep sleep (WARNING if turned on will drain more battery)</string>
 
-    <string name="category_radio_title">行動網路</string>
-    <string name="hspa_title_head">HSPA</string>
-    <string name="hspa_summary_head">啟用 HSDPA／HSUPA</string>
+    <string name="g_sensor_title">Horizontal calibration</string>
+    <string name="g_sensor_summary">Calibrate horizontally using accelerometer</string>
+    <string name="gsensor_ready">Place device on a level surface and tap Calibrate</string>
+    <string name="gsensor_calibrating">Calibrating. Do not move device. Please wait...</string>
+    <string name="gsensor_nofile">Unable to find offset file. Try again</string>
+    <string name="gsensor_end">Calibrated</string>
+    <string name="gsensor_button1">Complete</string>
+    <string name="gsensor_button2">Calibrate</string>
+	
+	<string name="category_fast_charge_title">Fast Charge Support</string>
+	<string name="force_fast_charge_head">Force Fast Charge</string>
+	<string name="force_fast_charge_summary_head">Detect USB-connected PC as USB Wall Charger, for faster charging mode</string>
 </resources>

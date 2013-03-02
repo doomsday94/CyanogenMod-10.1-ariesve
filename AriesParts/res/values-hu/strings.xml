@@ -2,43 +2,24 @@
 <resources>
     <string name="app_name">Galaxy S Plus Beállítások</string>
 
-    <string name="category_screen_title">Screen</string>
-    <string name="color_tuning_title_head">Color Tuning</string>
-    <string name="color_tuning_summary_head">Calibrate screen color</string>
-    <string name="color_red_title">Red</string>
-    <string name="color_green_title">Green</string>
-    <string name="color_blue_title">Blue</string>
-    <string name="color_red_gamma_title">Red Gamma</string>
-    <string name="color_green_gamma_title">Green Gamma</string>
-    <string name="color_blue_gamma_title">Blue Gamma</string>
-    <string name="mdnie_title_head">mDNIe Mode</string>
-    <string name="mdnie_summary_head">Adjust mDNIe display post-processing</string>
-
+	<string name="category_screen_title">Screen</string>
     <string name="category_touchkey_title">Érintő Gombok</string>
     <string name="backlight_timeout_title_head">Háttérvilágítás Időtúllépése</string>
     <string name="backlight_timeout_summary_head">Állítsa be, mennyi idő után kapcsoljon ki autómatikusan a háttérvilágítás</string>
 
-    <string name="category_radio_title">Radio</string>
-    <string name="hspa_title_head">HSPA</string>
-    <string name="hspa_summary_head">Enable HSDPA/HSUPA</string>
+	<string name="backlight_wakelock_title_head">Háttérvilágítás Aktiválása</string>
+    <string name="backlight_wakelock_summary_head">A háttérvilágítás aktiválása alvó módban (FIGYELEM ez növelnini fogja az akkumulátorhasználatot)</string>
 
-    <string name="category_tvout_title">TV Out</string>
-    <string name="tvout_enable_head">TV Out</string>
-    <string name="tvout_enable_summary_nocable">TV Out cable not connected</string>
-    <string name="tvout_enable_summary">TV Out cable connected, check to enable</string>
-    <string name="tvout_enable_summary_on">TV Out enabled</string>
-    <string name="tvout_system_head">TV System</string>
-    <string name="tvout_system_summary">Set your TV system for TV Out</string>
-
-    <string name="category_volume_boost_title">Volume Controls</string>
-    <string name="volume_boost_title_head">In-Call Volume Controls</string>
-    <string name="volume_boost_summary_head">Boost in-call volume settings</string>
-    <string name="boost_rcv_title">Earpiece Volume</string>
-    <string name="boost_bt_title">Bluetooth Volume</string>
-    <string name="boost_spk_title">Speakerphone Volume</string>
-    <string name="boost_hp_title">Headphone Volume</string>
-    <string name="mic_rcv_title">Earpiece Mic</string>
-    <string name="mic_spk_title">Speakerphone Mic</string>
-    <string name="mic_hp_title">Headphone Mic</string>
-    <string name="mic_hp_no_mic_title">Headphone (with no mic) Mic</string>
+    <string name="g_sensor_title">Vízszintes kalibrálás</string>
+    <string name="g_sensor_summary">Vízszintes kalibrálás a gyorsulásméró segítségével</string>
+    <string name="gsensor_ready">Helyezze a készüléket egy sík felületre és érintse meg a Kalibrálás gombot</string>
+    <string name="gsensor_calibrating">Kalibrálás. Ne mozgassa a készüléket. Kérjük, várjon...</string>
+    <string name="gsensor_nofile">A fájl nem található. Próbálja újra</string>
+    <string name="gsensor_end">Kalibrálva</string>
+    <string name="gsensor_button1">Kész</string>
+    <string name="gsensor_button2">Kalibrálás</string>
+	
+    <string name="category_fast_charge_title">Gyors Töltés Támogatás</string>
+    <string name="force_fast_charge_head">Gyors Töltés kényszerítése</string>
+    <string name="force_fast_charge_summary_head">Észlelje az USB-n csatlakoztatott PC-t USB-s Fali Töltőként a gyorsabb töltési módért</string>
 </resources>

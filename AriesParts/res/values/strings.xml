@@ -1,47 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Galaxy S Plus Settings</string>
-
-    <string name="category_screen_title">Screen</string>
-    <string name="color_tuning_title_head">Color Tuning</string>
-    <string name="color_tuning_summary_head">Calibrate screen color</string>
-    <string name="color_red_title">Red</string>
-    <string name="color_green_title">Green</string>
-    <string name="color_blue_title">Blue</string>
-    <string name="color_red_gamma_title">Red Gamma</string>
-    <string name="color_green_gamma_title">Green Gamma</string>
-    <string name="color_blue_gamma_title">Blue Gamma</string>
-    <string name="mdnie_title_head">mDNIe Mode</string>
-    <string name="mdnie_summary_head">Adjust mDNIe display post-processing</string>
-
+	<string name="category_screen_title">Screen</string>
     <string name="category_touchkey_title">Touch Keys</string>
     <string name="backlight_timeout_title_head">Backlight Timeout</string>
     <string name="backlight_timeout_summary_head">Adjust the delay before the touch key backlight automatically turns off</string>
+
 	<string name="backlight_wakelock_title_head">Backlight Activation</string>
     <string name="backlight_wakelock_summary_head">Activate the backlight during deep sleep (WARNING if turned on will drain more battery)</string>
-    <string name="category_radio_title">Radio</string>
-    <string name="hspa_title_head">HSPA</string>
-    <string name="hspa_summary_head">Enable HSDPA/HSUPA</string>
 
-    <string name="category_tvout_title">TV Out</string>
-    <string name="tvout_enable_head">TV Out</string>
-    <string name="tvout_enable_summary_nocable">TV Out cable not connected</string>
-    <string name="tvout_enable_summary">TV Out cable connected, check to enable</string>
-    <string name="tvout_enable_summary_on">TV Out enabled</string>
-    <string name="tvout_system_head">TV System</string>
-    <string name="tvout_system_summary">Set your TV system for TV Out</string>
-
-    <string name="category_volume_boost_title">Volume Controls</string>
-    <string name="volume_boost_title_head">In-Call Volume Controls</string>
-    <string name="volume_boost_summary_head">Boost in-call volume settings</string>
-    <string name="boost_rcv_title">Earpiece Volume</string>
-    <string name="boost_bt_title">Bluetooth Volume</string>
-    <string name="boost_spk_title">Speakerphone Volume</string>
-    <string name="boost_hp_title">Headphone Volume</string>
-    <string name="mic_rcv_title">Earpiece Mic</string>
-    <string name="mic_spk_title">Speakerphone Mic</string>
-    <string name="mic_hp_title">Headphone Mic</string>
-    <string name="mic_hp_no_mic_title">Headphone (with no mic) Mic</string>
     <string name="g_sensor_title">Horizontal calibration</string>
     <string name="g_sensor_summary">Calibrate horizontally using accelerometer</string>
     <string name="gsensor_ready">Place device on a level surface and tap Calibrate</string>
@@ -50,4 +17,8 @@
     <string name="gsensor_end">Calibrated</string>
     <string name="gsensor_button1">Complete</string>
     <string name="gsensor_button2">Calibrate</string>
+	
+	<string name="category_fast_charge_title">Fast Charge Support</string>
+	<string name="force_fast_charge_head">Force Fast Charge</string>
+	<string name="force_fast_charge_summary_head">Detect USB-connected PC as USB Wall Charger, for faster charging mode</string>
 </resources>

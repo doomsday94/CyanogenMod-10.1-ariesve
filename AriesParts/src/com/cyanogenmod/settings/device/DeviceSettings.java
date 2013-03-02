@@ -25,12 +25,14 @@ public class DeviceSettings extends PreferenceActivity  {
     public static final String KEY_TVOUT_SYSTEM = "tvout_system";
     public static final String KEY_VOLUME_BOOST = "volume_boost";
     public static final String KEY_VOLUME_CATEGORY = "category_volume_boost";
+    public static final String KEY_FAST_CHARGE = "force_fast_charge";
 
     /*private ColorTuningPreference mColorTuning;
     private ListPreference mMdnie;*/
     private ListPreference mBacklightTimeout;
     private CheckBoxPreference mBacklightWakelock;
     private Preference mGSensor;
+	private CheckBoxPreference mFastCharge;
     /*private ListPreference mHspa;
     private CheckBoxPreference mTvOutEnable;
     private ListPreference mTvOutSystem;
@@ -69,6 +71,10 @@ public class DeviceSettings extends PreferenceActivity  {
 
 		mGSensor = (Preference) findPreference(KEY_GSENSOR);
         mGSensor.setEnabled(GSensor.isSupported());
+
+        mFastCharge = (CheckBoxPreference) findPreference(KEY_FAST_CHARGE);
+        mFastCharge.setEnabled(FastCharge.isSupported());
+        mFastCharge.setOnPreferenceChangeListener(new FastCharge());
 
         /*mHspa = (ListPreference) findPreference(KEY_HSPA);
         if (Hspa.isSupported()) {
