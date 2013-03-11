@@ -20,6 +20,9 @@ on early-boot
     setrlimit 8 67108864 67108864
 
 on boot
+    # Disable idle power collapse during boot.
+    # These features will be enabled at the end of boot
+    write /sys/module/pm2/parameters/idle_sleep_mode 3
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
@@ -34,6 +37,8 @@ on boot
     chown bluetooth bluetooth ro.bt.bdaddr_path
     chown bluetooth bluetooth /sys/devices/platform/msm_serial_hs.0/clock
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
+
+    chmod 0666 /sys/class/backlight/panel/brightness
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
@@ -201,7 +206,7 @@ on post-fs-data
     setprop vold.post_fs_data_done 1
 
 service wpa_supplicant /system/bin/wpa_supplicant \
-    -Dwext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
+    -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf -e/data/misc/wifi/entropy.bin
     class main
     socket wpa_wlan0 dgram 660 wifi wifi
     disabled

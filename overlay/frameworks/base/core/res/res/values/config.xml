@@ -67,10 +67,6 @@
         <item>"wlan0"</item>
     </string-array>
 
-    <!-- Boolean indicating whether the start command should be called on the wireless interface
-        when starting the SoftAp -->
-    <bool name="config_wifiApStartInterface">true</bool>
-
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
@@ -161,6 +157,9 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <!-- Minimum screen brightness allowed by the power manager. -->
+    <integer name="config_screenBrightnessDim">30</integer>
 
     <!-- Flag indicating whether we should enable automatic brightness for
          the button and keyboard backlights. -->
