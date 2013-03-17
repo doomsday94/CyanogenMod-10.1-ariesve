@@ -75,6 +75,19 @@ ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
 # Enable repeatable keys in recovery
 ro.cwm.enable_key_repeat=true
 
+# Disable Sending Usage Data
+ro.config.nocheckin=1
+
+# Video Acceleration
+video.accelerate.hw=1
+debug.performance.tuning=1
+
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+
 # I9001 Hardware Info
 ro.device.cpu=Qualcomm Snapdragon MSM8255T (1.400 MHz)
 ro.device.gpu=Qualcomm Adreno 205
